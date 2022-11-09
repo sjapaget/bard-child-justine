@@ -7,6 +7,38 @@
  Version:      1.0.0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
- Tags: blog, e-commerce, food-and-drink, one-column, two-columns, three-columns, grid-layout, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, flexible-header, full-width-template, custom-menu, custom-logo, featured-images, footer-widgets, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready     
- Text Domain:  twentyfifteenchild
+ Tags: blog, e-commerce, food-and-drink, one-column, two-columns, three-columns, grid-layout, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, flexible-header, full-width-template, custom-menu, custom-logo, featured-images, footer-widgets, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+ Text Domain:  Bard Child Justine
 */
+
+/* Set navbar logo size */
+.menu-image-title-after.menu-image-not-hovered img {
+    padding-right: 40px;
+    width: 15vh;
+}
+
+/* Overide defaults from Bard theme */
+
+/* Homepage */
+
+/* Header */
+.cv-outer {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 1rem;
+}
+
+.entry-header {
+    background-position: center bottom !important;
+}
+
+.header-logo a {
+    font-size: 4rem;
+    padding: 0 1rem;
+}
+
+.metaslider .caption-wrap {
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) !important;
+  text-align: center;
+}
