@@ -3,7 +3,7 @@
  Description:  Bard Child Theme for https://justinetheodor.fr/
  Author:       Samuel Paget
  Author URI:   http://example.com
- Template:     Bard
+ Template:     bard
  Version:      1.0.0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
@@ -53,8 +53,25 @@
   text-align: center;
 }
 
-.product {
+/* WooCommerce */
+
+.woocommerce-LoopProduct-link {
     box-shadow: 1px 3px 3px #5f422525;
+    max-height: 500px;
+    display: grid;
+    grid-template-rows: 3fr .5fr .5fr;
+}
+
+@media screen and (min-width: 1300px) {
+  
+    .size-woocommerce_thumbnail {
+        max-height: 350px;
+    }
+}
+
+.woocommerce-LoopProduct-link > img {
+    max-width: 90vw;
+    object-fit: cover;
 }
 
 .products {
@@ -67,7 +84,6 @@
 
 .woocommerce-loop-product__title, .price {
     color: #5f4225 !important;
-    padding: 0.3em !important;
     font-weight: 500 !important;
 }
 
