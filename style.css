@@ -11,6 +11,9 @@
  Text Domain:  Bard Child Justine
 */
 
+/* Seperate Sheet to override woocommerce styles */
+@import url('./woocommerce.css');
+
 /* Set navbar logo size */
 .menu-image-title-after.menu-image-not-hovered img {
     padding-right: 40px;
@@ -40,7 +43,7 @@
 
 .header-socials-icon {
     width: 50px;
-    height: 50px; 
+    height: 50px;
     font-size: 2rem;
 }
 
@@ -51,43 +54,4 @@
 .metaslider .caption-wrap {
   background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) !important;
   text-align: center;
-}
-
-/* WooCommerce */
-
-.woocommerce-LoopProduct-link {
-    box-shadow: 1px 3px 3px #5f422525;
-    max-height: 500px;
-    display: grid;
-    grid-template-rows: 3fr .5fr .5fr;
-}
-
-@media screen and (min-width: 1300px) {
-  
-    .size-woocommerce_thumbnail {
-        max-height: 350px;
-    }
-}
-
-.woocommerce-LoopProduct-link > img {
-    max-width: 90vw;
-    object-fit: cover;
-}
-
-.products {
-    padding: 1rem !important;
-}
-
-.product_type_simple, .add_to_cart_button {
-    display: none !important;
-}
-
-.woocommerce-loop-product__title, .price {
-    color: #5f4225 !important;
-    font-weight: 500 !important;
-}
-
-.price {
-    font-size: 1.5rem !important;
-    font-weight: 800 !important;
 }
