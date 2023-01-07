@@ -74,6 +74,18 @@
   max-width: 20vw;
 }
 
+@media (max-width: 768px) {
+  #page-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__col {
+    max-width: 90vw;
+  }
+}
+
+
 .footer__title {
   color: white !important;
   font-style: italic;
