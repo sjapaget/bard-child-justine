@@ -105,8 +105,16 @@
   width: 2rem;
 }
 
+.footer__logo--socials-container {
+  display: flex;
+}
+
+.footer__logo-socials-img {
+  width: 4.5rem;
+}
+
 .footer__logo-address {
-  width: 4rem;
+  width: 5rem;
 }
 
 .footer__link, .footer p {

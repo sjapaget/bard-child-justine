@@ -23,7 +23,14 @@
       <a class="footer__link" href="<?php echo site_url('/mentions-legales'); ?>">protection des données</a>
     </div>
     <h6 class="footer__title">Mes Reseaux Sociaux</h6>
-    <img class="footer__logo" src="<?php echo get_stylesheet_directory_uri() ?>/images/réseaux.svg" alt="Social Network logos">
+    <div class="footer__logo--socials-container">
+      <a href="https://www.facebook.com/profile.php?id=100030724736732" target="_blank">
+        <img class="footer__logo" src="<?php echo get_stylesheet_directory_uri() ?>/images/justine-fb.png" alt="facebook logo">
+      </a>
+      <a href="https://www.instagram.com/justinetheodor/" target="_blank">
+        <img class="footer__logo" src="<?php echo get_stylesheet_directory_uri() ?>/images/justine-insta.png" alt="instagram logo">
+      </a>
+    </div>
   </div>
   <div class="footer__col">
     <h6 class="footer__title">Pour me contacter</h6>
