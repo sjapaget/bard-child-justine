@@ -25,10 +25,10 @@
     <h6 class="footer__title">Mes Reseaux Sociaux</h6>
     <div class="footer__logo--socials-container">
       <a href="https://www.facebook.com/profile.php?id=100030724736732" target="_blank">
-        <img class="footer__logo" src="<?php echo get_stylesheet_directory_uri() ?>/images/justine-fb.png" alt="facebook logo">
+        <img class="footer__logo footer__logo-socials-img" src="<?php echo get_stylesheet_directory_uri() ?>/images/justine-fb.png" alt="facebook logo">
       </a>
       <a href="https://www.instagram.com/justinetheodor/" target="_blank">
-        <img class="footer__logo" src="<?php echo get_stylesheet_directory_uri() ?>/images/justine-insta.png" alt="instagram logo">
+        <img class="footer__logo footer__logo-socials-img" src="<?php echo get_stylesheet_directory_uri() ?>/images/justine-insta.png" alt="instagram logo">
       </a>
     </div>
   </div>

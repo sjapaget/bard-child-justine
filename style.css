@@ -14,6 +14,14 @@
 /* Seperate Sheet to override woocommerce styles */
 @import url('./woocommerce.css');
 
+
+/* Variables */ 
+
+:root {
+  --text-color-main: #87480c;
+  --bg-color-main: #f0c08f;
+}
+
 /* Set navbar logo size */
 .menu-image-title-after.menu-image-not-hovered img {
     padding-right: 40px;
@@ -59,10 +67,11 @@
 /* footer */
 
 #page-footer {
-  background-color: #f0c08f;
+  background-color: var(--bg-color-main);
   display: flex;
   justify-content: space-evenly;
   padding: 1rem;
+  line-height: normal;
 }
 
 .footer__col {
@@ -94,7 +103,7 @@
 }
 
 .footer__logo {
-  width: 6rem;
+  width: 8rem;
 }
 
 .footer__logo-labels {
@@ -117,18 +126,24 @@
   width: 5rem;
 }
 
-.footer__link, .footer p {
+.footer > p {
   font-size: .85rem;
+  color: var(--text-color-main);
+}
+
+.footer__link {
+  font-size: .85rem;
+  color: var(--text-color-main) !important;
+}
+
+.footer__link:hover {
+  color: #22222250 !important;
 }
 
 .footer__link-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-#page-footer a:hover {
-  color: #22222250 !important;
 }
 
 .footer__text {
