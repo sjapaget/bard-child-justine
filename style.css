@@ -13,6 +13,7 @@
 
 /* Seperate Sheet to override woocommerce styles */
 @import url('./woocommerce.css');
+@import url('./footer.css');
 
 
 /* Variables */ 
