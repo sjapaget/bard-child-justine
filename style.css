@@ -69,11 +69,11 @@
 
 input.tnp-submit {
   transition-duration: 400ms;
-  transition-property: box-shadow;
+  transition-timing-function: ease-in-out;
 }
 
 input.tnp-submit:hover {
   cursor: pointer;
-  box-shadow: inset 0 0 10px #e5e4e3;
-  /* transition: 200ms; */
+  color: var(--text-color-main) !important;
+  background-color: var(--bg-color-main) !important;
 }
