@@ -3,13 +3,25 @@
  Description:  Bard Child Theme for https://justinetheodor.fr/
  Author:       Samuel Paget
  Author URI:   http://example.com
- Template:     Bard
+ Template:     bard
  Version:      1.0.0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags: blog, e-commerce, food-and-drink, one-column, two-columns, three-columns, grid-layout, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, flexible-header, full-width-template, custom-menu, custom-logo, featured-images, footer-widgets, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
  Text Domain:  Bard Child Justine
 */
+
+/* Seperate Sheet to override woocommerce styles */
+@import url('./woocommerce.css');
+@import url('./footer.css');
+
+
+/* Variables */ 
+
+:root {
+  --text-color-main: #87480c;
+  --bg-color-main: #f0c08f;
+}
 
 /* Set navbar logo size */
 .menu-image-title-after.menu-image-not-hovered img {
@@ -38,7 +50,103 @@
     padding: 0 1rem;
 }
 
+.header-socials-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+}
+
+.fab {
+    padding-top: 0.5rem !important;
+}
+
 .metaslider .caption-wrap {
   background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) !important;
   text-align: center;
+}
+
+/* footer */
+
+#page-footer {
+  background-color: var(--bg-color-main);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  line-height: normal;
+}
+
+.footer__col {
+  padding: .3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 20vw;
+}
+
+@media (max-width: 768px) {
+  #page-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__col {
+    max-width: 90vw;
+  }
+}
+
+
+.footer__title {
+  color: white !important;
+  font-style: italic;
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.footer__logo {
+  width: 8rem;
+}
+
+.footer__logo-labels {
+  width: 12rem;
+}
+
+.footer__logo-mail {
+  width: 2rem;
+}
+
+.footer__logo--socials-container {
+  display: flex;
+}
+
+.footer__logo-socials-img {
+  width: 4.5rem;
+}
+
+.footer__logo-address {
+  width: 5rem;
+}
+
+.footer > p {
+  font-size: .85rem;
+  color: var(--text-color-main);
+}
+
+.footer__link {
+  font-size: .85rem;
+  color: var(--text-color-main) !important;
+}
+
+.footer__link:hover {
+  color: #22222250 !important;
+}
+
+.footer__link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__text {
+  font-size: .85rem;
 }
