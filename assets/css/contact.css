@@ -3,28 +3,28 @@
 }
 
 .nf-form-layout {
-    margin: 0 auto;
     color: var(--text-color-main);
+    margin: 0 auto;
 }
 
 .ninja-forms-field.nf-element {
-    border-radius: 4px;
     border: none;
     border: 1.5px solid var(--text-color-main);
+    border-radius: 4px;
 }
 
 .ninja-forms-field.nf-element.nf-contact-btn {
     background-color: var(--text-color-main);
-    color: white;
-    width: 100%;
     border: none;
+    color: white;
     padding: .5rem 0;
+    width: 100%;
 }
 
 
 @media screen and (min-width: 768px) {
     .nf-form-layout {
-        max-width: 50vw;
         align-items: flex-start;
+        max-width: 50vw;
     }
 }
