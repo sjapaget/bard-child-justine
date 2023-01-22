@@ -32,6 +32,10 @@
 
 /* Overide defaults from Bard theme */
 
+.page-title {
+  color: var(--text-color-main) !important;
+}
+
 /* Homepage */
 
 /* Header */
