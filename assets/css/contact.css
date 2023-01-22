@@ -1,0 +1,30 @@
+.nf-before-form-content {
+    text-align: end;
+}
+
+.nf-form-layout {
+    color: var(--text-color-main);
+    margin: 0 auto;
+}
+
+.ninja-forms-field.nf-element {
+    border: none;
+    border: 1.5px solid var(--text-color-main);
+    border-radius: 4px;
+}
+
+.ninja-forms-field.nf-element.nf-contact-btn {
+    background-color: var(--text-color-main);
+    border: none;
+    color: white;
+    padding: .5rem 0;
+    width: 100%;
+}
+
+
+@media screen and (min-width: 768px) {
+    .nf-form-layout {
+        align-items: flex-start;
+        max-width: 50vw;
+    }
+}
