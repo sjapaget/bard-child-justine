@@ -5,6 +5,7 @@
     max-height: 500px;
     display: grid;
     grid-template-rows: 2fr .5fr .5fr;
+    text-align: center;
 }
 
 @media screen and (min-width: 1300px) {
@@ -31,6 +32,13 @@
     color: #5f4225 !important;
     font-weight: 500 !important;
     padding: 0.3rem;
+}
+
+.woocommerce-loop-product__title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
 }
 
 .price {
